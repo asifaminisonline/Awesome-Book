@@ -62,7 +62,39 @@ localStorage.setItem('books',JSON.stringify(books));
         }
     }
 
+//Event: Display Books
 
+document.addEventListener('DOMContentLoaded',UI.displayBooks);
+
+//Event: Add a book
+
+document.querySelector('#Book-form').addEventListener('submit',(e) =>{
+    e.preventDefault();
+
+    // prevent actual submit
+    const title= document.querySelector('#title').value;
+    const author= document.querySelector('#author').value;
+//
+
+const book = new Book(title,author);
+
+// Add Book to UI
+
+UI.addBookToList(book);
+
+//Add book to store
+
+Store.addBook(book);
+
+})
+
+//Event: Remove a book
+
+document.querySelector('#book-list').addEventListener('click',(e)=>
+ {
+    UI.deleteBook(e.target);
+ Store.removeBook(e.target.parentElement);
+});
 
 
 //remove book from store
