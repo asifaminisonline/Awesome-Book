@@ -75,7 +75,6 @@ document.querySelector('#Book-form').addEventListener('submit', (e) => {
 
   // prevent actual submit
 
-  
 
   //
 
