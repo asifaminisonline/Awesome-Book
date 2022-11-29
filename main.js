@@ -74,7 +74,9 @@ document.querySelector('#Book-form').addEventListener('submit', (e) => {
   e.preventDefault();
 
   // prevent actual submit
-
+  const title = document.querySelector('#title').value;
+  const author = document.querySelector('#author').value;
+  
 
   //
 
