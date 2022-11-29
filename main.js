@@ -1,4 +1,5 @@
 // book class: Represents a book
+
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -6,6 +7,10 @@ class Book {
     this.isbn = Math.random();
   }
 }
+
+
+
+
 // Store class: Handles storage
 
 class Store {
