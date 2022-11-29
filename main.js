@@ -1,19 +1,11 @@
 // book class: Represents a book
 class Book {
-    constructor(title, author) {
-      this.title = title;
-      this.author = author;
-      this.isbn = Math.random();
-    }
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
+    this.isbn = Math.random();
   }
-  
-  class Book {
-      constructor(title, author) {
-        this.title = title;
-        this.author = author;
-        this.isbn = Math.random();
-      }
-    }
+}
 
 // Store class: Handles storage
 
@@ -84,7 +76,6 @@ document.querySelector('#Book-form').addEventListener('submit', (e) => {
   // prevent actual submit
   const title = document.querySelector('#title').value;
   const author = document.querySelector('#author').value;
-  
 
   //
 
