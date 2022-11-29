@@ -8,9 +8,6 @@ class Book {
   }
 }
 
-
-
-
 // Store class: Handles storage
 
 class Store {
