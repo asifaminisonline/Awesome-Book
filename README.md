@@ -76,7 +76,7 @@ Clone this repository to your desired folder:
 
 ## 👥 Authors
 
-<a name="authors"></a>
+<a name="Asif Amin"></a>
 
 <!-- SUPPORT -->
 
