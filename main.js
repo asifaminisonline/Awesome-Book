@@ -53,19 +53,21 @@ class UI {
 
   static addBookToList(book) {
     const list = document.querySelector('#book-list');
-    const row = document.createElement('tr-d');
+    const row = document.createElement('tr');
     row.innerHTML = `
-   <th>${book.title}</th><br>
-   <th>${book.author}</th><br>
-   <th><a href="#"><button class="delete" data-title="${book.isbn}">Remove</button></a></th><br>
-   <hr class="hr-w" style="width:175px">
+    <ul>
+   <li><td>${book.title}</td></li>
+   <li><td>${book.author}</td></li>
+   <li><td><a href="#"><button class="delete" data-title="${book.isbn}">Remove</button></a></td></li>
+  </div>
+  </ul>
    `;
     list.appendChild(row);
   }
 
   static deleteBook(el) {
     if (el.classList.contains('delete')) {
-      el.parentElement.parentElement.remove();
+      el.parentElement.parentElement.parentElement.remove();
     }
   }
 }
