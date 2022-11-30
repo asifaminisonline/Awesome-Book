@@ -108,9 +108,8 @@ tr:nth-child(odd) {
 }
 
 .footer {
+  text-align: left;
   border: 2px solid grey;
-
-  /* font-weight: bold; */
   font-size: 18px;
   padding: 5px 12px;
 }
