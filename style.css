@@ -1,5 +1,50 @@
-body {
-  margin: 0;
-  overflow-x: hidden;
-  padding: 0;
+.main-title {
+  margin-left: 8%;
+  width: 80%;
+  text-align: center;
+}
+
+.delete {
+  padding: 5px;
+}
+
+.table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 80%;
+  border: 1px solid #ddd;
+}
+
+#Book-form {
+  margin-top: 20px;
+  justify-content: center;
+  width: 80%;
+  margin-left: 40%;
+}
+
+#Add-Book {
+  margin: 5px;
+  padding: 5px;
+}
+
+#Book-form input {
+  height: 25px;
+  margin: 5px;
+}
+
+tr {
+  display: flex;
+  align-items: baseline;
+}
+
+td {
+  align-items: center;
+  padding: 2px;
+}
+
+tr:nth-child(even) {
+  background-color: #bbb6b6;
+  justify-content: space-between;
+  align-items: center;
 }
