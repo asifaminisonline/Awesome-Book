@@ -14,13 +14,13 @@ class Store {
   static getBooks() {
     let books;
     if (
-      localStorage.getItem('books') === undefined
-      || localStorage.getItem('books') === null
-      || localStorage.getItem('books') === 'null'
+      localStorage.getItem("books") === undefined ||
+      localStorage.getItem("books") === null ||
+      localStorage.getItem("books") === "null"
     ) {
       books = [];
     } else {
-      books = JSON.parse(localStorage.getItem('books'));
+      books = JSON.parse(localStorage.getItem("books"));
     }
     return books;
   }
@@ -28,7 +28,7 @@ class Store {
   static addBook(book) {
     const books = Store.getBooks();
     books.push(book);
-    localStorage.setItem('books', JSON.stringify(books));
+    localStorage.setItem("books", JSON.stringify(books));
   }
 
   static removeBook(isbn) {
@@ -39,7 +39,7 @@ class Store {
         books.splice(index, 1);
       }
     });
-    localStorage.setItem('books', JSON.stringify(books));
+    localStorage.setItem("books", JSON.stringify(books));
     // todo check  books object
   }
 }
@@ -52,8 +52,8 @@ class UI {
   }
 
   static addBookToList(book) {
-    const list = document.querySelector('#book-list');
-    const row = document.createElement('tr');
+    const list = document.querySelector("#book-list");
+    const row = document.createElement("tr");
     row.innerHTML = `
     <ul>
    <li><td>${book.title}</td></li>
@@ -66,7 +66,7 @@ class UI {
   }
 
   static deleteBook(el) {
-    if (el.classList.contains('delete')) {
+    if (el.classList.contains("delete")) {
       el.parentElement.parentElement.parentElement.remove();
     }
   }
@@ -74,24 +74,24 @@ class UI {
 
 // Event: Display Books
 
-document.addEventListener('DOMContentLoaded', UI.displayBooks);
+document.addEventListener("DOMContentLoaded", UI.displayBooks);
 
 // Event: Add a book
 
-document.querySelector('#Book-form').addEventListener('submit', (e) => {
+document.querySelector("#Book-form").addEventListener("submit", (e) => {
   e.preventDefault();
 
   // prevent actual submit
-  const title = document.querySelector('#title').value;
-  const author = document.querySelector('#author').value;
+  const title = document.querySelector("#title").value;
+  const author = document.querySelector("#author").value;
   //
   if (
-    title !== null
-    && title !== undefined
-    && title !== ''
-    && author !== null
-    && author !== undefined
-    && author !== ''
+    title !== null &&
+    title !== undefined &&
+    title !== "" &&
+    author !== null &&
+    author !== undefined &&
+    author !== ""
   ) {
     const book = new Book(title, author);
     // Add Book to UI
@@ -104,39 +104,39 @@ document.querySelector('#Book-form').addEventListener('submit', (e) => {
 
 // Event: Remove a book
 
-document.querySelector('#book-list').addEventListener('click', (e) => {
-  const isbn = e.target.getAttribute('data-title');
+document.querySelector("#book-list").addEventListener("click", (e) => {
+  const isbn = e.target.getAttribute("data-title");
   Store.removeBook(isbn);
   UI.deleteBook(e.target);
 });
 
 function showSec(section) {
-  const bookList = document.getElementById('list');
-  const bookForm = document.getElementById('add-book');
-  const conTact = document.getElementById('contact');
+  const bookList = document.getElementById("list");
+  const bookForm = document.getElementById("add-book");
+  const conTact = document.getElementById("contact");
 
   switch (section) {
-    case 'list':
-      if (bookList.classList.contains('d-none')) {
-        bookList.classList.remove('d-none');
-        bookForm.classList.add('d-none');
-        conTact.classList.add('d-none');
+    case "list":
+      if (bookList.classList.contains("d-none")) {
+        bookList.classList.remove("d-none");
+        bookForm.classList.add("d-none");
+        conTact.classList.add("d-none");
       }
       break;
 
-    case 'form':
-      if (bookForm.classList.contains('d-none')) {
-        bookForm.classList.remove('d-none');
-        bookList.classList.add('d-none');
-        conTact.classList.add('d-none');
+    case "form":
+      if (bookForm.classList.contains("d-none")) {
+        bookForm.classList.remove("d-none");
+        bookList.classList.add("d-none");
+        conTact.classList.add("d-none");
       }
       break;
 
-    case 'contact':
-      if (conTact.classList.contains('d-none')) {
-        conTact.classList.remove('d-none');
-        bookForm.classList.add('d-none');
-        bookList.classList.add('d-none');
+    case "contact":
+      if (conTact.classList.contains("d-none")) {
+        conTact.classList.remove("d-none");
+        bookForm.classList.add("d-none");
+        bookList.classList.add("d-none");
       }
       break;
 
