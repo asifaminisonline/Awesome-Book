@@ -49,3 +49,19 @@ td {
   align-items: center;
   padding: 2px;
 }
+tr:nth-child(even) {
+  background-color: #bbb6b6;
+  justify-content: space-between;
+  align-items: center;
+}
+
+tr:nth-child(odd) {
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  text-align: left;
+  width: 80%;
+  list-style: none;
+}
