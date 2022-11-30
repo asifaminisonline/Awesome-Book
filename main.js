@@ -110,5 +110,4 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
   UI.deleteBook(e.target);
 });
 
-
 // remove book from store
