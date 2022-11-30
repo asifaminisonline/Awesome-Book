@@ -111,32 +111,32 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
 });
 
 function showSec(section) {
-  const secBookList = document.getElementById('list');
-  const secBookForm = document.getElementById('add-book');
-  const secContact = document.getElementById('contact');
+  const bookList = document.getElementById('list');
+  const bookForm = document.getElementById('add-book');
+  const conTact = document.getElementById('contact');
 
   switch (section) {
     case 'list':
-      if (secBookList.classList.contains('d-none')) {
-        secBookList.classList.remove('d-none');
-        secBookForm.classList.add('d-none');
-        secContact.classList.add('d-none');
+      if (bookList.classList.contains('d-none')) {
+        bookList.classList.remove('d-none');
+        bookForm.classList.add('d-none');
+        conTact.classList.add('d-none');
       }
       break;
 
     case 'form':
-      if (secBookForm.classList.contains('d-none')) {
-        secBookForm.classList.remove('d-none');
-        secBookList.classList.add('d-none');
-        secContact.classList.add('d-none');
+      if (bookForm.classList.contains('d-none')) {
+        bookForm.classList.remove('d-none');
+        bookList.classList.add('d-none');
+        conTact.classList.add('d-none');
       }
       break;
 
     case 'contact':
-      if (secContact.classList.contains('d-none')) {
-        secContact.classList.remove('d-none');
-        secBookForm.classList.add('d-none');
-        secBookList.classList.add('d-none');
+      if (conTact.classList.contains('d-none')) {
+        conTact.classList.remove('d-none');
+        bookForm.classList.add('d-none');
+        bookList.classList.add('d-none');
       }
       break;
 
