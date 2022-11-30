@@ -15,32 +15,59 @@
         <nav class="navbar">
             <h1 class="nav-title" >Awesome Books</h1>
             <ul class="nav-ul">
-                <li id="list"><a href="#" class="line">List</a></li>
-                <li id="addNew"><a href="#"class="line">Add New</a></li>
-                <li id="contact"><a href="#">Contact</a></li>
+                    <li><a onclick="showSec('list')">List</a> | </li>
+                    <li><a onclick="showSec('form')">Add New</a> | </li>
+                    <li><a onclick="showSec('contact')">Contact</a></li>
             </ul> 
         </nav>
+        <div class="content" id="list">
+        <h1>Awesome Book List</h1>
         <table class="table">
-            <thead>
+        <thead>
                 <tr>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
-    <tbody id="book-list"></tbody>
-            </thead>
-        </table>
         
-        <form id="Book-form">
+        <tbody id="book-list" style="height: 420px;"></tbody>
+        </thead>
+        </table>
+    </div>
+
+
+            <div class="content d-none" id="add-book">
             <h1>Add a New Book</h1>
+            <form id="Book-form">
             <input type="text" id="title" placeholder="Title"><br>
             <input type="text" id="author" placeholder="Author"><br>
             <button type="submit" id="Add-Book">Add</button>
             </form>
-            <footer>
+            </div>
+
+
+
+            
+
+
+
+
+                <div class="content d-none" id="contact">
+                    
+                <h2>Contact Information</h2>
+                <div class="inner-contact">
+                <p>Do you have any question or you just want to say hello?<br>You can reach out to us!</p>
+                <ul>
+                  <li>Our Email: mail@mail.com</li>
+                  <li>Our Phone Number: 00339-880-978</li>
+                  <li>Our Adress: House, Street, Zip-00000</li>
+                </ul>
+            </div>
+              </div>
+
+              <footer>
                 <h1 class="footer">Copyright</h1>
             </footer>
         <script src="./main.js"></script>
         </body>
         </html>
-

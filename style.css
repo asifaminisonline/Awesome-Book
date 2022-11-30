@@ -1,7 +1,12 @@
-body{
-  margin: 0px 5px;
+body {
+  margin: 0 50px;
   overflow-x: hidden;
 }
+
+button {
+  cursor: pointer;
+}
+
 .main-title {
   margin-left: 11%;
   width: 100%;
@@ -21,14 +26,14 @@ body{
 }
 
 #Book-form {
-  margin: 165px 0px;
+  margin: 175px 0;
   justify-content: center;
   width: 100%;
-  padding-left: 33%;
+  text-align: center;
 }
 
 #Add-Book {
-  margin: 5px;
+  /* margin-left: 22%; */
   padding: 5px;
   width: 100px;
 }
@@ -54,6 +59,7 @@ tr:nth-child(even) {
   justify-content: space-between;
   align-items: center;
 }
+
 tr:nth-child(odd) {
   justify-content: space-between;
   align-items: center;
@@ -65,7 +71,7 @@ tr:nth-child(odd) {
   list-style: none;
 }
 
-.navbar{
+.navbar {
   border: 2px solid grey;
   margin: auto;
   width: 100%;
@@ -73,39 +79,64 @@ tr:nth-child(odd) {
   justify-content: space-between;
 }
 
-.navbar .nav-title{
+.navbar .nav-title {
   font-weight: bold;
   font-size: 18px;
-  padding: 0px 12px;
+  padding: 0 12px;
 }
 
-.navbar ul{
+.navbar ul {
   display: flex;
   justify-content: space-between;
 }
 
-.navbar ul li{
-list-style: none;
-margin-right: 15px;
+.navbar ul li {
+  list-style: none;
+  margin-right: 15px;
 }
-.navbar ul li a{
+
+.navbar ul li a {
   color: black;
   text-decoration: none;
-  padding: 0px 12px;
+  padding: 0 12px;
   font-size: 16px;
+  cursor: pointer;
 }
 
-.line{
-  border-right:2px solid grey; 
+.line {
+  border-right: 2px solid grey;
 }
 
-
-
-
-
-.footer{
+.footer {
   border: 2px solid grey;
+
   /* font-weight: bold; */
   font-size: 18px;
   padding: 5px 12px;
+}
+
+.d-none {
+  display: none !important;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.inner-contact {
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  height: 310px;
+}
+
+.inner-contact ul {
+  margin-left: 40%;
+  width: 50%;
+  text-align: center;
+}
+
+.inner-contact ul li {
+  text-align: left;
 }
