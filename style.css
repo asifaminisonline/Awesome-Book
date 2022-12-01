@@ -1,6 +1,15 @@
+body {
+  margin: 0 100px;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
 .main-title {
   margin-left: 11%;
-  width: 80%;
+  width: 100%;
   text-align: center;
 }
 
@@ -12,30 +21,25 @@
   margin: auto;
   border-collapse: collapse;
   border-spacing: 0;
-  width: 80%;
+  width: 100%;
   border: 1px solid #ddd;
 }
 
 #Book-form {
-  margin-top: 20px;
+  margin: 175px 0;
   justify-content: center;
-  width: 80%;
-  padding-left: 43%;
-}
-
-.separator {
-  margin-top: 40px;
-  background-color: black;
-  width: 30%;
-  height: 4px;
+  width: 100%;
+  text-align: center;
 }
 
 #Add-Book {
-  margin: 5px;
+  /* margin-left: 22%; */
   padding: 5px;
+  width: 100px;
 }
 
 #Book-form input {
+  width: 30%;
   height: 25px;
   margin: 5px;
 }
@@ -61,8 +65,77 @@ tr:nth-child(odd) {
   align-items: center;
 }
 
-li {
+.table li {
   text-align: left;
-  width: 80%;
+  width: 100%;
   list-style: none;
+}
+
+.navbar {
+  border: 2px solid grey;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .nav-title {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0 12px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+.navbar ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 0 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.line {
+  border-right: 2px solid grey;
+}
+
+.footer {
+  text-align: left;
+  border: 2px solid grey;
+  font-size: 18px;
+  padding: 5px 12px;
+}
+
+.d-none {
+  display: none !important;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.inner-contact {
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  height: 310px;
+}
+
+.inner-contact ul {
+  margin-left: 38%;
+  width: 50%;
+  text-align: center;
+}
+
+.inner-contact ul li {
+  text-align: left;
 }

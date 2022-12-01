@@ -110,4 +110,38 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
   UI.deleteBook(e.target);
 });
 
-// remove book from store
+function showSec(section) {
+  const bookList = document.getElementById('list');
+  const bookForm = document.getElementById('add-book');
+  const conTact = document.getElementById('contact');
+
+  switch (section) {
+    case 'list':
+      if (bookList.classList.contains('d-none')) {
+        bookList.classList.remove('d-none');
+        bookForm.classList.add('d-none');
+        conTact.classList.add('d-none');
+      }
+      break;
+
+    case 'form':
+      if (bookForm.classList.contains('d-none')) {
+        bookForm.classList.remove('d-none');
+        bookList.classList.add('d-none');
+        conTact.classList.add('d-none');
+      }
+      break;
+
+    case 'contact':
+      if (conTact.classList.contains('d-none')) {
+        conTact.classList.remove('d-none');
+        bookForm.classList.add('d-none');
+        bookList.classList.add('d-none');
+      }
+      break;
+
+    default:
+      break;
+  }
+}
+showSec();

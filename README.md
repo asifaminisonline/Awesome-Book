@@ -53,6 +53,11 @@
 - **Add Books to a book list**
 - **Delete Books from the book list**
 - **Save data to local storage**
+- **Modify the Awesome Books application to have a navigation Bar**
+- **Three content sections:**
+  _1 Books list._
+  _2 Add book form._
+  _3 Contact info._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -76,7 +81,7 @@ Clone this repository to your desired folder:
 
 ## 👥 Authors
 
-<a name="Asif Amin"></a>
+<a name="Asif Amin and Naolkidanu" ></a>
 
 <!-- SUPPORT -->
 
