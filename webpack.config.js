@@ -1,17 +1,31 @@
-// webpack.config.js
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+  mode: "development",
   entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
+    path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
+  devServer: {
+    static: "./dist",
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+    }),
+  ],
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.png$/i,
+        type: "asset/resource",
       },
     ],
   },
