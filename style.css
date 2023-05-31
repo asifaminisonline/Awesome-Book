@@ -52,7 +52,7 @@ tr {
 td {
   align-items: center;
   padding: 2px;
-  width: -webkit-fill-available;
+  width: 100%;
 }
 
 tr:nth-child(even) {
@@ -74,6 +74,7 @@ tr:nth-child(odd) {
 
 .navbar {
   border: 2px solid grey;
+  border-radius: 10px;
   margin: auto;
   width: 100%;
   display: flex;
@@ -139,4 +140,27 @@ h2 {
 
 .inner-contact ul li {
   text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0 0;
+  }
+
+  .navbar ul li a {
+    padding: 0 0;
+    font-size: 13px;
+  }
+
+  #Book-form input {
+    width: 90%;
+    margin: 7px;
+  }
+
+  .inner-contact ul {
+    line-height: 32px;
+    margin-left: 0%;
+    width: 70%;
+    text-align: center;
+  }
 }
