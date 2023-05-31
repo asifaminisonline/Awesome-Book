@@ -77,11 +77,19 @@ Clone this repository to your desired folder:
 
 ### Install
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://6477b4aa6c71221344d2b7ea--nimble-squirrel-4c6940.netlify.app/)- Powered by Netify
+
 <!-- AUTHORS -->
 
 ## 👥 Authors
 
-<a name="Asif Amin and Naolkidanu" ></a>
+👤 **Asif Amin**
+
+- GitHub: [@asifaminisonline ](https://github.com/asifaminisonline)
+- Twitter: [@Asif Amin](https://twitter.com/AminAmi53306702)
+- LinkedIn: [@Asif Amin](https://www.linkedin.com/in/asifaminisonline/)
 
 <!-- SUPPORT -->
 
@@ -101,4 +109,4 @@ We would like to thank all my fellow micronauts.
 
 <!-- FAQ (optional) -->
 
-## ❓ FAQ <a name="faq"></a
+## ❓ FAQ <a name="faq"></a>
