@@ -1,7 +1,7 @@
 {
-  "name": "to-do-list",
+  "name": "awesome-book",
   "version": "1.0.0",
-  "description": "To-do list project for Microverse.",
+  "description": "Awesome-Book",
   "private": true,
   "jest": {
     "moduleNameMapper": {
