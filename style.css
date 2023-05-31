@@ -52,6 +52,7 @@ tr {
 td {
   align-items: center;
   padding: 2px;
+  width: -webkit-fill-available;
 }
 
 tr:nth-child(even) {
