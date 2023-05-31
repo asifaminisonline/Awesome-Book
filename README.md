@@ -77,11 +77,19 @@ Clone this repository to your desired folder:
 
 ### Install
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://awesomebookslist.netlify.app/)- Powered by Netify
+
 <!-- AUTHORS -->
 
 ## 👥 Authors
 
-<a name="Asif Amin and Naolkidanu" ></a>
+👤 **Asif Amin**
+
+- GitHub: [@asifaminisonline ](https://github.com/asifaminisonline)
+- Twitter: [@Asif Amin](https://twitter.com/AminAmi53306702)
+- LinkedIn: [@Asif Amin](https://www.linkedin.com/in/asifaminisonline/)
 
 <!-- SUPPORT -->
 
